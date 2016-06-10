@@ -1,15 +1,15 @@
-mv-vim-nagios
+nagios.vim
 =============
 
 Description
 -----------
 
-[Vim](http://www.vim.org/) plugin for [Icinga](http://www.icinga.org)
+[Vim](http://www.vim.org/) plugin for [nagios](http://www.nagios.org)
 
 This plugin provides:
 
   * Syntax highlight
-  * Snipmate snippets
+  * UltiSnips snippets
 
 
 Installation
@@ -17,11 +17,8 @@ Installation
 
 Use [Vundle](https://github.com/gmarik/vundle), to install this plugin:
 
-    # inside vim
-    :BundleInstall 'mv/mv-vim-icinga'
-
-    # Add to ~/.vimrc
-    Bundle 'mv/mv-vim-icinga'
+    # inside ~/.vimrc
+    :Plugin 'crazy-canux/nagios.vim'
 
 
 References
@@ -32,5 +29,5 @@ References
 License
 -------
 
-Copyright (c) Marcus Vinicius Ferreira. Distributed under the same terms as Vim itself. See :help license.
+Copyright (c) Canux CHENG. Distributed under the same terms as Vim itself. See :help license.
 
