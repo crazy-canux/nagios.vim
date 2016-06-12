@@ -1,33 +1,29 @@
-nagios.vim
-=============
+# nagios.vim
 
-Description
------------
+[nagios](https://www.nagios.org) syntax for [vim](http://www.vim.org/).
 
-[Vim](http://www.vim.org/) plugin for [nagios](http://www.nagios.org)
+Inspired by <https://github.com/pld-linux/vim-syntax-nagios>
 
-This plugin provides:
+# How to install
 
-  * Syntax highlight
-  * UltiSnips snippets
+## pathogen
 
+    cd ~/.vim/bundle
+    git clone git@github.com:crazy-canux/nagios.vim.git
 
-Installation
-------------
+## vundle
 
-Use [Vundle](https://github.com/gmarik/vundle), to install this plugin:
+    vi ~/.vimrc
+    Plugin 'crazy-canux/nagios.vim'
 
-    # inside ~/.vimrc
-    :Plugin 'crazy-canux/nagios.vim'
+# Contribution
 
+If you are intrested, you can ask for pull request.
 
-References
-----------
+You can add your own ftdetect.
 
-  * Syntax file [nagios.vim](http://cvs.pld-linux.org/cgi-bin/cvsweb.cgi/packages/vim-syntax-nagios/nagios.vim)
+You can also create nagios.snippets files.
 
-License
--------
+# License
 
-Copyright (c) Canux CHENG. Distributed under the same terms as Vim itself. See :help license.
-
+Just as the vim, all the nagios.vim are licensed under the terms of the GPL license.
