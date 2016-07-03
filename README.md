@@ -4,6 +4,15 @@
 
 Inspired by <https://github.com/pld-linux/vim-syntax-nagios>
 
+# Feature
+
+Include:
+
+1. nagios configuration sytax
+2. autodetect configuration files
+3. snippets file for vim-snipmate
+4. snippets file for ultisnips
+
 # How to install
 
 ## pathogen
@@ -23,6 +32,11 @@ If you are intrested, you can ask for pull request.
 You can add your own ftdetect.
 
 You can also create nagios.snippets files.
+
+# TODO
+
+1. nagios.snippets for UltiSnips
+2. nagios.snippets for snippets
 
 # License
 
