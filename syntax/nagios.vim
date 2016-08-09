@@ -3,6 +3,8 @@
 " Language:     Nagios template object configuration file
 " Author:       Ava Arachne Jarvis <ajar@katanalynx.dyndns.org>
 " Author:       Lance Albertson <ramereth@gentoo.org>
+" Author:       Vincent BESANCON <besancon.vincent@gmail.com>
+" Author:       Canux CHENG <canuxcheng@gmail.com>
 " Maintainer:   Elan Ruusamäe <glen@pld-linux.org>
 " URL:          http://cvs.pld-linux.org/cgi-bin/cvsweb.cgi/packages/vim-syntax-nagios/nagios.vim
 " Version Info: $Revision: 1.20 $
@@ -24,6 +26,7 @@ else
 endif
 
 syn match nagiosLineComment '^[\s]*#.*'
+syn match nagiosLineComment '#.*'
 syn match nagiosComment ';.*$' contained
 
 syn match nagiosConstant '\<[0-9]\+%\?\>'
@@ -49,6 +52,9 @@ syn match nagiosMacro  '\$ADMIN\(EMAIL\|PAGER\)\$'
 syn match nagiosMacro  '\$\(SERVICE\|HOST\)ATTEMPT\$'
 syn match nagiosMacro  '\$LAST\(HOST\|SERVICE\)CHECK\$'
 
+syn match nagiosCustVar '\s\+_[A-Z0-9_]\+'
+syn match nagiosCustVar '\$_\(HOST\|SERVICE\).*\$'
+
 syn region nagiosDefBody start='{' end='}'
 	\ contains=nagiosComment,nagiosLineComment,nagiosDirective,nagiosMacro,nagiosConstant,nagiosString,nagiosSpecial transparent
 
@@ -57,7 +63,7 @@ syn keyword nagiosDirective contained active_checks_enabled address alias check_
 syn keyword nagiosDirective contained check_freshness check_period checks_enabled check_interval retry_interval
 syn keyword nagiosDirective contained command_line command_name
 syn keyword nagiosDirective contained contacts contact_groups contact_name contactgroups contactgroup_name contactgroup_members
-syn keyword nagiosDirective contained dependent_host_name dependent_hostgroup dependent_service_description
+syn keyword nagiosDirective contained dependent_host_name dependent_hostgroup dependent_service_description dependent_servicegroup_name dependent_hostgroup_name
 syn keyword nagiosDirective contained email event_handler event_handler_enabled
 syn keyword nagiosDirective contained execution_failure_criteria first_notification first_notification_delay execution_failure_options
 syn keyword nagiosDirective contained flap_detection_enabled flap_detection_options freshness_threshold failure_prediction_enabled
@@ -98,3 +104,4 @@ hi link nagiosDirective Define
 hi link nagiosMacro Macro
 hi link nagiosString String
 hi link nagiosSpecial Special
+hi link nagiosCustVar Label
