@@ -10,8 +10,8 @@ Include:
 
 1. nagios configuration sytax
 2. autodetect configuration files
-3. snippets file for vim-snipmate
-4. snippets file for ultisnips
+3. nagios.vim/snippets/nagios.snippets file for vim-snipmate
+4. nagios.vim/UltiSnips/nagios.snippets file for ultisnips
 
 # How to install
 
