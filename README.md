@@ -27,7 +27,7 @@ Include:
 
 # Contribution
 
-If you are intrested, you can ask for pull request.
+If you are interested, you can ask for pull request.
 
 You can add your own ftdetect.
 
